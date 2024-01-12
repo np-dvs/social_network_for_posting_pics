@@ -152,7 +152,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         source: ".env"
-        target: "kittygram"
+        target: "kittygram_env"
     - name: Executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
